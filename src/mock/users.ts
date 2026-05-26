@@ -1,0 +1,14 @@
+import { User } from "../types/user";
+
+export const mockUsers: User[] = [
+  { id: "USR-001", nip: "198507012010011001", nama: "Budi Santoso", email: "budi@company.com", departemen: "Teknologi Informasi", jabatan: "Kepala Divisi IT", role: "admin", telepon: "081234567890", aktif: true, created_at: "2020-01-01T00:00:00Z", updated_at: "2024-06-01T00:00:00Z" },
+  { id: "USR-002", nip: "199003152012012002", nama: "Siti Rahmawati", email: "siti@company.com", departemen: "Keuangan", jabatan: "Kepala Keuangan", role: "manager", telepon: "081234567891", aktif: true, created_at: "2020-03-01T00:00:00Z", updated_at: "2024-06-01T00:00:00Z" },
+  { id: "USR-003", nip: "199208202014012003", nama: "Ahmad Hidayat", email: "ahmad@company.com", departemen: "Teknologi Informasi", jabatan: "Staff IT", role: "staff", telepon: "081234567892", aktif: true, created_at: "2021-06-01T00:00:00Z", updated_at: "2024-06-01T00:00:00Z" },
+  { id: "USR-004", nip: "199105052013012004", nama: "Dewi Lestari", email: "dewi@company.com", departemen: "SDM", jabatan: "Kepala SDM", role: "manager", telepon: "081234567893", aktif: true, created_at: "2020-05-01T00:00:00Z", updated_at: "2024-06-01T00:00:00Z" },
+  { id: "USR-005", nip: "199312122015012005", nama: "Rizky Pratama", email: "rizky@company.com", departemen: "Teknologi Informasi", jabatan: "Staff IT", role: "staff", telepon: "081234567894", aktif: true, created_at: "2021-09-01T00:00:00Z", updated_at: "2024-06-01T00:00:00Z" },
+  { id: "USR-006", nip: "198809122011012006", nama: "Fitri Handayani", email: "fitri@company.com", departemen: "Pemasaran", jabatan: "Kepala Pemasaran", role: "manager", telepon: "081234567895", aktif: true, created_at: "2020-02-01T00:00:00Z", updated_at: "2024-06-01T00:00:00Z" },
+  { id: "USR-007", nip: "199406182016012007", nama: "Doni Prasetyo", email: "doni@company.com", departemen: "Teknologi Informasi", jabatan: "Admin Server", role: "teknisi", telepon: "081234567896", aktif: true, created_at: "2022-01-01T00:00:00Z", updated_at: "2024-06-01T00:00:00Z" },
+  { id: "USR-008", nip: "199511252017012009", nama: "Agus Wijaya", email: "agus@company.com", departemen: "Teknologi Informasi", jabatan: "Staff IT", role: "staff", telepon: "081234567897", aktif: true, created_at: "2022-03-01T00:00:00Z", updated_at: "2024-06-01T00:00:00Z" },
+  { id: "USR-009", nip: "199008152014012011", nama: "Hendra Gunawan", email: "hendra@company.com", departemen: "Operasional", jabatan: "Staff Operasional", role: "staff", telepon: "081234567898", aktif: false, created_at: "2021-04-01T00:00:00Z", updated_at: "2024-11-20T00:00:00Z" },
+  { id: "USR-010", nip: "199107202015012012", nama: "Nina Susanti", email: "nina@company.com", departemen: "Hukum", jabatan: "Staf Hukum", role: "staff", telepon: "081234567899", aktif: true, created_at: "2021-07-01T00:00:00Z", updated_at: "2024-06-01T00:00:00Z" },
+];

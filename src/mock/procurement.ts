@@ -1,0 +1,86 @@
+import { ProcurementRequest } from '../types/procurement';
+
+export const mockProcurement: ProcurementRequest[] = [
+  {
+    id: 'PRC-001', nomor: 'PR-2024-001', judul: 'Pembelian 10 Unit Laptop Dell', tipe: 'pembelian',
+    status: 'diterima', pengaju: 'Budi Santoso', departemen: 'Teknologi Informasi',
+    tanggal_pengajuan: '2024-06-01', tanggal_disetujui: '2024-06-05',
+    estimasi_biaya: 185000000, biaya_realisasi: 182500000,
+    deskripsi: 'Pengadaan laptop untuk tim IT',
+    alasan: 'Kebutuhan upgrade hardware tim IT',
+    catatan: 'Sudah diterima dan didistribusikan',
+    items: [
+      { nama: 'Dell Latitude 5540', jumlah: 10, estimasi_harga: 18500000, spesifikasi: 'i7-1355U/16GB/512GB' },
+    ],
+    created_at: '2024-06-01T08:00:00Z', updated_at: '2024-07-01T10:00:00Z',
+  },
+  {
+    id: 'PRC-002', nomor: 'PR-2024-002', judul: 'Sewa Generator Cadangan 150 KVA', tipe: 'sewa',
+    status: 'disetujui', pengaju: 'Hendra Gunawan', departemen: 'Operasional',
+    tanggal_pengajuan: '2024-11-01', tanggal_disetujui: '2024-11-10',
+    estimasi_biaya: 75000000, biaya_realisasi: null,
+    deskripsi: 'Sewa generator cadangan selama renovasi genset',
+    alasan: 'Genset utama sedang dalam perbaikan besar',
+    catatan: 'Kontrak sewa 3 bulan',
+    items: [
+      { nama: 'Generator Diesel 150 KVA', jumlah: 1, estimasi_harga: 75000000, spesifikasi: 'Perkins 150 KVA + ATS' },
+    ],
+    created_at: '2024-11-01T08:00:00Z', updated_at: '2024-11-10T10:00:00Z',
+  },
+  {
+    id: 'PRC-003', nomor: 'PR-2024-003', judul: 'Pembelian Furniture Ruang Rapat Baru', tipe: 'pembelian',
+    status: 'diajukan', pengaju: 'Dewi Lestari', departemen: 'SDM',
+    tanggal_pengajuan: '2024-11-20', tanggal_disetujui: null,
+    estimasi_biaya: 45000000, biaya_realisasi: null,
+    deskripsi: 'Pengadaan furniture untuk ruang rapat lantai 3',
+    alasan: 'Ruang rapat perlu direnovasi dan dilengkapi furniture baru',
+    catatan: 'Menunggu approval direktur',
+    items: [
+      { nama: 'Meja Rapat Oval 6m', jumlah: 1, estimasi_harga: 15000000, spesifikasi: 'Ukuran 6x1.8m, finishing walnut' },
+      { nama: 'Kursi Rapat Eksekutif', jumlah: 16, estimasi_harga: 1500000, spesifikasi: 'Ergonomis, busa memory foam' },
+      { nama: 'TV LED 75"', jumlah: 1, estimasi_harga: 9000000, spesifikasi: 'Samsung 75" 4K Smart TV' },
+    ],
+    created_at: '2024-11-20T08:00:00Z', updated_at: '2024-11-20T08:00:00Z',
+  },
+  {
+    id: 'PRC-004', nomor: 'PR-2024-004', judul: 'Lisensi Microsoft 365 - Tambahan 50 User', tipe: 'pembelian',
+    status: 'ditolak', pengaju: 'Budi Santoso', departemen: 'Teknologi Informasi',
+    tanggal_pengajuan: '2024-10-01', tanggal_disetujui: null,
+    estimasi_biaya: 90000000, biaya_realisasi: null,
+    deskripsi: 'Penambahan lisensi M365 untuk 50 user baru',
+    alasan: 'Rekrutmen karyawan baru tahun depan',
+    catatan: 'Ditolak, akan diajukan kembali di tahun anggaran 2025',
+    items: [
+      { nama: 'M365 Business Premium', jumlah: 50, estimasi_harga: 1800000, spesifikasi: 'Lisensi tahunan per user' },
+    ],
+    created_at: '2024-10-01T08:00:00Z', updated_at: '2024-10-15T10:00:00Z',
+  },
+  {
+    id: 'PRC-005', nomor: 'PR-2024-005', judul: 'Pembelian Switch Cisco untuk Ekspansi', tipe: 'pembelian',
+    status: 'draft', pengaju: 'Agus Wijaya', departemen: 'Teknologi Informasi',
+    tanggal_pengajuan: '2024-11-28', tanggal_disetujui: null,
+    estimasi_biaya: 170000000, biaya_realisasi: null,
+    deskripsi: 'Pengadaan 2 unit switch untuk ekspansi jaringan ke gedung baru',
+    alasan: 'Ekspansi kantor ke gedung D membutuhkan tambahan perangkat jaringan',
+    catatan: 'Masih dalam penyusunan spesifikasi teknis',
+    items: [
+      { nama: 'Cisco Catalyst 9300', jumlah: 2, estimasi_harga: 85000000, spesifikasi: '48-port PoE, modular PS' },
+    ],
+    created_at: '2024-11-28T08:00:00Z', updated_at: '2024-11-28T08:00:00Z',
+  },
+  {
+    id: 'PRC-006', nomor: 'PR-2024-006', judul: 'Pengadaan Alat Medis Klinik', tipe: 'hibah',
+    status: 'diajukan', pengaju: 'Dewi Lestari', departemen: 'SDM',
+    tanggal_pengajuan: '2024-11-25', tanggal_disetujui: null,
+    estimasi_biaya: 35000000, biaya_realisasi: null,
+    deskripsi: 'Pengadaan alat medis tambahan untuk klinik perusahaan (program CSR)',
+    alasan: 'Klinik membutuhkan peralatan medis tambahan untuk pelayanan karyawan',
+    catatan: 'Program CSR dari mitra perusahaan',
+    items: [
+      { nama: 'Defibrillator AED', jumlah: 1, estimasi_harga: 20000000, spesifikasi: 'Philips HeartStart FRx' },
+      { nama: 'Timbangan Digital + Stature Meter', jumlah: 2, estimasi_harga: 2500000, spesifikasi: 'Seca 769' },
+      { nama: 'Tabung Oksigen 1m3', jumlah: 2, estimasi_harga: 5000000, spesifikasi: 'Tabung + regulator + trolley' },
+    ],
+    created_at: '2024-11-25T08:00:00Z', updated_at: '2024-11-25T08:00:00Z',
+  },
+];
