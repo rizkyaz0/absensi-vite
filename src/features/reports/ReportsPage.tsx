@@ -203,7 +203,7 @@ function AssetReport() {
                     <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
                     <XAxis dataKey="name" tick={{ fontSize: 10 }} angle={-25} textAnchor="end" height={70} />
                     <YAxis tick={{ fontSize: 11 }} tickFormatter={(v: number) => `${(v / 1000000).toFixed(0)}M`} />
-                    <ChartTooltip content={<ChartTooltipContent formatter={(v: number) => formatRupiah(v)} />} />
+                    <ChartTooltip content={<ChartTooltipContent formatter={(v: any) => formatRupiah(v)} />} />
                     <Bar dataKey="nilai" fill="hsl(var(--chart-1))" radius={[4, 4, 0, 0]} maxBarSize={50} />
                   </BarChart>
                 </ResponsiveContainer>

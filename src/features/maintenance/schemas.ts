@@ -8,7 +8,7 @@ export const maintenanceFormSchema = z.object({
   tanggal_mulai: z.string().min(1, "Start date is required"),
   tanggal_selesai: z.string().optional().default(""),
   biaya: z.coerce
-    .number({ invalid_type_error: "Must be a number" })
+    .number()
     .nonnegative("Cost cannot be negative"),
   vendor: z.string().min(1, "Vendor is required"),
   petugas: z.string().min(1, "Officer is required"),

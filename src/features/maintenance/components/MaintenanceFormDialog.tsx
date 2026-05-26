@@ -58,9 +58,9 @@ export function MaintenanceFormDialog() {
   });
   const allAssets = assetsData?.data ?? [];
 
-  const form = useForm<MaintenanceFormValues>({
-    resolver: zodResolver(maintenanceFormSchema),
-    defaultValues: {
+const form = useForm<MaintenanceFormValues>({
+  resolver: zodResolver(maintenanceFormSchema),
+  defaultValues: {
       asset_id: "",
       tipe: "rutin",
       judul: "",
